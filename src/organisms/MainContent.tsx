@@ -1,4 +1,4 @@
-import FadeIn from "../components/animations/FadeIn"
+import FadeIn from "../animations/FadeIn"
 import Button from "../atoms/Button"
 import { Instagram } from "lucide-react"
 import { Github } from "lucide-react"
