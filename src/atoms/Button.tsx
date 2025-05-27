@@ -9,6 +9,7 @@ const Button = ({children, text, href, className}: ButtonProps) => {
   return(
     <a href={href} target="_blank" title={text} className={className}>
       {children}
+      <p>{text}</p>
     </a>
   )
 }
