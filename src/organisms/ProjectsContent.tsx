@@ -1,5 +1,5 @@
-import ProjectsTitle from "src/atoms/ProjectsTitle.astro"
-import ProjectsCard from "src/atoms/ProjectsCard.astro"
+import ProjectsTitle from "src/atoms/ProjectsTitle.tsx"
+import ProjectsCard from "src/atoms/ProjectsCard.tsx"
 import FadeIn from "src/animations/FadeIn"
 
 const ProjectsContent = () => {
@@ -13,9 +13,11 @@ const ProjectsContent = () => {
       </FadeIn>
       <FadeIn delay={0.3}>
         <div>
-          <ProjectsTitle category="Simple" />
+          <ProjectsTitle category="Simple Websites" />
         </div>
       </FadeIn>
+      <div className="flex flex-col md:flex-row gap-3">
+      </div>
     </div>
   )
 }
