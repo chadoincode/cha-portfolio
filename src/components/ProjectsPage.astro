@@ -1,10 +1,15 @@
 ---
 import Header from "../sections/Header";
 import Footer from "src/sections/Footer";
+import ProjectsContent from '../organisms/ProjectsContent'
+import ProjectsTitle from "src/atoms/ProjectsTitle.astro";
 ---
 <header>
   <Header />
 </header>
+<main>
+  <ProjectsContent client:load />
+</main>
 <footer>
   <Footer />
 </footer>
