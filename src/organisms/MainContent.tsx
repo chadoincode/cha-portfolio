@@ -34,7 +34,7 @@ const MainContent = () => {
               You can look all of my projects and my creations in <a className="underline" href="/projects">Projects</a>
             </p>
             <p className="sm:text-md">
-              Also my designs and sum arts in <a className="underline" href="/gallery">Gallery</a>
+              Also my designs and some arts in <a className="underline" href="/gallery">Gallery</a>
             </p>
           </FadeIn>
           <FadeIn delay={0.7}>
