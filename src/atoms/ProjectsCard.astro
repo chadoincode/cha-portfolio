@@ -1,0 +1,9 @@
+---
+const { title, description, link } = Astro.props
+---
+<div class="text-light cursor-pointer card-hover overflow-hidden rounded-lg p-3">
+  <a href={link}target="_blank">
+    <h1 class="font-bold text-lg">{title}</h1>
+    <p class="text-sm">{description}</p>
+  </a>
+</div>
