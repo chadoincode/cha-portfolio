@@ -1,6 +1,7 @@
 import ProjectsTitle from "src/atoms/ProjectsTitle.tsx"
 import ProjectsCard from "src/atoms/ProjectsCard.tsx"
 import FadeIn from "src/animations/FadeIn"
+import { WebProjects } from "src/datas/WebProjects"
 
 const ProjectsContent = () => {
   return(
@@ -12,11 +13,22 @@ const ProjectsContent = () => {
         </div>
       </FadeIn>
       <FadeIn delay={0.3}>
-        <div>
+        <div className="py-5 text-light">
           <ProjectsTitle category="Simple Websites" />
         </div>
       </FadeIn>
       <div className="flex flex-col md:flex-row gap-3">
+        {
+          WebProjects.map((project, index) => (
+            <FadeIn delay={index * 0.1 + 0.3}>
+              <ProjectsCard
+                title={project.name}
+                description={project.description}
+                link={project.link}
+              />
+            </FadeIn>
+          ))
+        }
       </div>
     </div>
   )
