@@ -15,8 +15,10 @@ const SkillsCard = ({name, icon, category}: SkillCardProps) => {
     <div className="border-2 rounded-lg p-4 grid-rows-2 gap-1 justify-items-center ">
       <Icon width={50} height={50} icon={icon} />
       <div className='grid justify-items-center pt-2 gap-2'>
-        <p className='font-semibold text-md'>{name}</p>
-        <CategoryTag label={category} color={CategoryColor} />
+        <p className='font-semibold text-sm hidden sm:block sm:text-md'>{name}</p>
+        <div className='hidden sm:block'>
+          <CategoryTag label={category} color={CategoryColor} />
+        </div>
       </div>
     </div>
   )
