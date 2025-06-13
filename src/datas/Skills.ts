@@ -1,27 +1,43 @@
-export const skills = [
+export type Skill = {
+  name: string
+  icon: string
+  category: string
+}
+
+export const skills:Skill[] = [
+  {
+    name: "HTML",
+    icon: "catppuccin-html",
+    category: "Front-End, Web Development"
+  },
+  {
+    name: "CSS",
+    icon: "catpuccin-css3",
+    category: "Front-End, Web Development"
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "catppuccin-tailwind",
+    category: "Front-End, Web Development"
+  },
   {
     name: "ReactJS",
-    icon: "react",
+    icon: "catppuccin-typescript-react",
     category: "Front-End, Web Development"
   },
   {
     name: "Astro",
-    icon: "",
+    icon: "catppuccin-typescript-astro",
     category: "Front-End, Web Development"
   },
   {
-    name: "Github",
-    icon: "", 
-    category: "Web Development",
-  },
-  {
     name: "JavaScript",
-    icon: "",
+    icon: "catppuccin-javascript",
     category: "Front-End, Web Development"
   },
   {
     name: "TypeScript",
-    icon: "",
+    icon: "catppuccin-typescript",
     category: "Front-End, Web Development"
   },
   {
@@ -31,12 +47,12 @@ export const skills = [
   },
   {
     name: "Adobe After Effects",
-    icon: "",
+    icon: "catppuccin-adobe-ae",
     category: "Video Editing, Motion Graphic"
   },
   {
     name: "Figma",
-    icon: "",
+    icon: "catppuccin-figma",
     category: "Graphic Design"
   }
 ]
