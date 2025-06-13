@@ -8,37 +8,37 @@ export const skills:Skill[] = [
   {
     name: "HTML",
     icon: "catppuccin-html",
-    category: "Front-End, Web Development"
+    category: "Front-End"
   },
   {
     name: "CSS",
     icon: "catppuccin-css3",
-    category: "Front-End, Web Development"
+    category: "Front-End"
   },
   {
-    name: "Tailwind CSS",
+    name: "TailwindCSS",
     icon: "catppuccin-tailwind",
-    category: "Front-End, Web Development"
+    category: "Front-End"
   },
   {
     name: "ReactJS",
     icon: "catppuccin-typescript-react",
-    category: "Front-End, Web Development"
+    category: "Web Development"
   },
   {
     name: "Astro",
     icon: "catppuccin-astro",
-    category: "Front-End, Web Development"
+    category: "Web Development"
   },
   {
     name: "JavaScript",
     icon: "catppuccin-javascript",
-    category: "Front-End, Web Development"
+    category: "Web Development"
   },
   {
     name: "TypeScript",
     icon: "catppuccin-typescript",
-    category: "Front-End, Web Development"
+    category: "Web Development"
   },
   // {
   //   name: "Adobe Premiere Pro",
@@ -46,13 +46,13 @@ export const skills:Skill[] = [
   //   category: "Video Editing"
   // },
   {
-    name: "Adobe After Effects",
+    name: "After Effects",
     icon: "catppuccin-adobe-ae",
-    category: "Video Editing, Motion Graphic"
+    category: "Video Editing"
   },
   {
     name: "Figma",
     icon: "catppuccin-figma",
-    category: "Graphic Design, UI/UX Design"
+    category: "Graphic Design"
   }
 ]

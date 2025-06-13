@@ -1,4 +1,6 @@
 import { Icon } from '@iconify/react'
+import { categories } from 'src/datas/categories'
+import CategoryTag from './CategoryTag'
 
 type SkillCardProps = {
   name: string
@@ -7,12 +9,14 @@ type SkillCardProps = {
 }
 
 const SkillsCard = ({name, icon, category}: SkillCardProps) => {
+  const CategoryData = categories.find((cat) => cat.label === category)
+  const CategoryColor = CategoryData?.color || "#fff"
   return(
-    <div className="border-2 rounded-lg p-4 w-fit justify-items-center">
+    <div className="border-2 rounded-lg p-4 grid-rows-2 gap-1 justify-items-center ">
       <Icon width={50} height={50} icon={icon} />
-      <div className='grid justify-items-center pt-2'>
-        <p className='font-semibold'>{name}</p>
-        <p className='text-xs'>{category}</p>
+      <div className='grid justify-items-center pt-2 gap-2'>
+        <p className='font-semibold text-md'>{name}</p>
+        <CategoryTag label={category} color={CategoryColor} />
       </div>
     </div>
   )

@@ -35,29 +35,6 @@ const MainContent = () => {
                 When I'm not coding or editing, you can find me playing games / reading books / exploring new ideas.
               </p>
             </ScrollAnimation>
-          </div>
-        </div>
-
-        {/* skills section */}
-        <div className="pb-5">
-          <ScrollAnimation>
-            <h1 className="text-md font-bold sm:text-2xl pb-3">What I've Learned So Far</h1>
-          </ScrollAnimation>
-          <div className="grid grid-cols-3 gap-1">
-            {
-              skills.map((skill, index) => (
-                <ScrollAnimation>
-                  <SkillsCard 
-                    key={index}
-                    name={skill.name}
-                    icon={skill.icon}
-                    category={skill.category}
-                  />
-                </ScrollAnimation>
-              ))
-            }
-          </div>
-          <div className="text-justify sm:text-left grid gap-3 px-3 sm:px-6">
             <ScrollAnimation>
               <p className="sm:text-md">
                 You can look all of my projects and my creations in <a className="underline" href="/projects">Projects</a>
@@ -96,6 +73,35 @@ const MainContent = () => {
               </ScrollAnimation>
             </div>
           </div>
+        </div>
+
+        {/* skills section */}
+        <div className="py-11">
+          <ScrollAnimation>
+            <h1 className="text-md font-bold sm:text-2xl pb-3">What I've Learned So Far</h1>
+          </ScrollAnimation>
+          <div className="grid grid-cols-3 gap-2 px-3 sm:px-6">
+            {
+              skills.map((skill, index) => (
+                <ScrollAnimation>
+                  <SkillsCard 
+                    key={index}
+                    name={skill.name}
+                    icon={skill.icon}
+                    category={skill.category}
+                  />
+                </ScrollAnimation>
+              ))
+            }
+          </div>
+        </div>
+
+        {/* interest section */}
+        <div className="py-11">
+          <ScrollAnimation>
+            <h1></h1>
+          </ScrollAnimation>
+
         </div>
       </div>
     </div>
