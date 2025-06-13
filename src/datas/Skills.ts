@@ -53,6 +53,6 @@ export const skills:Skill[] = [
   {
     name: "Figma",
     icon: "catppuccin-figma",
-    category: "Graphic Design"
+    category: "Graphic Design, UI/UX Design"
   }
 ]

@@ -18,5 +18,9 @@ export const categories = [
   {
     label: "Graphic Design",
     color: "#edb75f"
+  },
+  {
+    label: "UI/UX Design",
+    color: "#fa3c4c"
   }
 ]
