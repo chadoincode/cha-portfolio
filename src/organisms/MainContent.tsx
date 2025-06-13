@@ -99,7 +99,7 @@ const MainContent = () => {
         {/* interest section */}
         <div className="py-11">
           <ScrollAnimation>
-            <h1></h1>
+            <h1 className="text-md font-bold sm:text-2xl pb-3">My Interests</h1>
           </ScrollAnimation>
 
         </div>

@@ -23,22 +23,22 @@ export const skills:Skill[] = [
   {
     name: "ReactJS",
     icon: "catppuccin-typescript-react",
-    category: "Web Development"
+    category: "Front-End"
   },
   {
     name: "Astro",
     icon: "catppuccin-astro",
-    category: "Web Development"
+    category: "Front-End"
   },
   {
     name: "JavaScript",
     icon: "catppuccin-javascript",
-    category: "Web Development"
+    category: "Front-End"
   },
   {
     name: "TypeScript",
     icon: "catppuccin-typescript",
-    category: "Web Development"
+    category: "Front-End"
   },
   // {
   //   name: "Adobe Premiere Pro",
