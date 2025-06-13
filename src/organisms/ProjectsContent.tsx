@@ -6,7 +6,7 @@ import { WebProjects } from "src/datas/WebProjects"
 
 const ProjectsContent = () => {
   return(
-    <div className="flex-min-h-screen px-25 py-10">
+    <div className="flex-min-h-screen px-15 sm:px-25 py-10">
       <ScrollAnimation>
         <div className="flex-col place-items-center text-light">
           <h1 className="text-2xl font-bold">Projects</h1>
@@ -18,7 +18,7 @@ const ProjectsContent = () => {
           <ProjectsTitle category="Simple Websites" />
         </div>
       </FadeIn>
-      <div className="flex flex-col md:flex-row gap-3">
+      <div className="flex flex-col md:flex-row gap-2 sm:gap-3">
         {
           WebProjects.map((project, index) => (
             <FadeIn delay={index * 0.1 + 0.3}>
