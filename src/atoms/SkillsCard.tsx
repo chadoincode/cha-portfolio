@@ -11,6 +11,12 @@ const SkillsCard = ({name, icon, category}: SkillCardProps) => {
   return(
     <div className="">
       <Icon icon={icon} />
+      <div>
+        <h3>{name}</h3>
+        <p>{category}</p>
+      </div>
     </div>
   )
 }
+
+export default SkillsCard
