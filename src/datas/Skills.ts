@@ -12,7 +12,7 @@ export const skills:Skill[] = [
   },
   {
     name: "CSS",
-    icon: "catpuccin-css3",
+    icon: "catppuccin-css3",
     category: "Front-End, Web Development"
   },
   {
@@ -27,7 +27,7 @@ export const skills:Skill[] = [
   },
   {
     name: "Astro",
-    icon: "catppuccin-typescript-astro",
+    icon: "catppuccin-astro",
     category: "Front-End, Web Development"
   },
   {
@@ -40,11 +40,11 @@ export const skills:Skill[] = [
     icon: "catppuccin-typescript",
     category: "Front-End, Web Development"
   },
-  {
-    name: "Adobe Premiere Pro",
-    icon: "",
-    category: "Video Editing"
-  },
+  // {
+  //   name: "Adobe Premiere Pro",
+  //   icon: "",
+  //   category: "Video Editing"
+  // },
   {
     name: "Adobe After Effects",
     icon: "catppuccin-adobe-ae",

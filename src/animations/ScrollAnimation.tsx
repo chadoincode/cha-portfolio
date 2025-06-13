@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const ScrollAnimation = ({ children }) => {
+const ScrollAnimation = ({ children, delay = 0 }) => {
   const ref = useRef(null)
   const [inView, setInView] = useState(false)
 
@@ -23,7 +23,7 @@ const ScrollAnimation = ({ children }) => {
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={ inView ? { opacity: 1, y: 0} : {} }
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.6 , ease: "easeInOut", delay: delay}}
       >
       {children}
     </motion.div>

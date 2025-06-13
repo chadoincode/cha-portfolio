@@ -11,7 +11,7 @@ const MainContent = () => {
     <div className="flex place-items-center justify-center">
       <div className="py-5 px-15 sm:py-11 sm:px-20 text-light w-[600px] md:w-[900px]">
 
-        {/* introduciton section */}
+        {/* introduction section */}
         <div className="pb-5">
           <ScrollAnimation>
             <h1 className="text-lg font-bold sm:text-3xl pb-3">Hi, I'm Ayesha</h1>
@@ -41,17 +41,19 @@ const MainContent = () => {
         {/* skills section */}
         <div className="pb-5">
           <ScrollAnimation>
-            <h1 className="text-lg font-bold sm:text-3xl pb-3">What I've Learned So Far</h1>
+            <h1 className="text-md font-bold sm:text-2xl pb-3">What I've Learned So Far</h1>
           </ScrollAnimation>
-          <div>
+          <div className="grid grid-cols-3 gap-1">
             {
               skills.map((skill, index) => (
-                <SkillsCard 
-                  key={index}
-                  name={skill.name}
-                  icon={skill.icon}
-                  category={skill.category}
-                />
+                <ScrollAnimation>
+                  <SkillsCard 
+                    key={index}
+                    name={skill.name}
+                    icon={skill.icon}
+                    category={skill.category}
+                  />
+                </ScrollAnimation>
               ))
             }
           </div>

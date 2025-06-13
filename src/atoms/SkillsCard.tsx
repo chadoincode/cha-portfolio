@@ -1,4 +1,3 @@
-import { skills } from "src/datas/Skills"
 import { Icon } from '@iconify/react'
 
 type SkillCardProps = {
@@ -9,11 +8,11 @@ type SkillCardProps = {
 
 const SkillsCard = ({name, icon, category}: SkillCardProps) => {
   return(
-    <div className="">
-      <Icon icon={icon} />
-      <div>
-        <h3>{name}</h3>
-        <p>{category}</p>
+    <div className="border-2 rounded-lg p-4 w-fit justify-items-center">
+      <Icon width={50} height={50} icon={icon} />
+      <div className='grid justify-items-center pt-2'>
+        <p className='font-semibold'>{name}</p>
+        <p className='text-xs'>{category}</p>
       </div>
     </div>
   )
