@@ -1,6 +1,8 @@
 import FadeIn from "../animations/FadeIn"
 import ScrollAnimation from "src/animations/ScrollAnimation"
 import Button from "../atoms/Button"
+import SkillsCard from "src/atoms/SkillsCard"
+import { skills } from "src/datas/Skills"
 import { Instagram } from "lucide-react"
 import { Github } from "lucide-react"
 
@@ -8,6 +10,8 @@ const MainContent = () => {
   return(
     <div className="flex place-items-center justify-center">
       <div className="py-5 px-15 sm:py-11 sm:px-20 text-light w-[600px] md:w-[900px]">
+
+        {/* introduciton section */}
         <div className="pb-5">
           <ScrollAnimation>
             <h1 className="text-lg font-bold sm:text-3xl pb-3">Hi, I'm Ayesha</h1>
@@ -33,10 +37,24 @@ const MainContent = () => {
             </ScrollAnimation>
           </div>
         </div>
+
+        {/* skills section */}
         <div className="pb-5">
           <ScrollAnimation>
             <h1 className="text-lg font-bold sm:text-3xl pb-3">What I've Learned So Far</h1>
           </ScrollAnimation>
+          <div>
+            {
+              skills.map((skill, index) => (
+                <SkillsCard 
+                  key={index}
+                  name={skill.name}
+                  icon={skill.icon}
+                  category={skill.category}
+                />
+              ))
+            }
+          </div>
           <div className="text-justify sm:text-left grid gap-3 px-3 sm:px-6">
             <ScrollAnimation>
               <p className="sm:text-md">
