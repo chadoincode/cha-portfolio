@@ -110,6 +110,7 @@ const MainContent = () => {
                     <InterestCard 
                       key={index}
                       name={interest.name}
+                      desc={interest.desc}
                     />
                   </ScrollAnimation>
                 ))
