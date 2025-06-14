@@ -2,7 +2,9 @@ import FadeIn from "../animations/FadeIn"
 import ScrollAnimation from "src/animations/ScrollAnimation"
 import Button from "../atoms/Button"
 import SkillsCard from "src/atoms/SkillsCard"
+import InterestCard from "src/atoms/InterestCard"
 import { skills } from "src/datas/Skills"
+import { interests } from "src/datas/Interest"
 import { Instagram } from "lucide-react"
 import { Github } from "lucide-react"
 
@@ -101,7 +103,18 @@ const MainContent = () => {
           <ScrollAnimation>
             <h1 className="text-md font-bold sm:text-2xl pb-3">My Interests</h1>
           </ScrollAnimation>
-
+            <div className="grid md:grid-cols-3 grid-cols-3 gap-2 px-3 sm:px-6">
+              {
+                interests.map((interest, index) => (
+                  <ScrollAnimation>
+                    <InterestCard 
+                      key={index}
+                      name={interest.name}
+                    />
+                  </ScrollAnimation>
+                ))
+              }
+            </div>
         </div>
       </div>
     </div>

@@ -5,10 +5,10 @@ type InterestCardProps = {
   name: string
 }
 
-const InterestCard = ({ icon, name }) => {
+const InterestCard = ({ name }) => {
   return(
     <div>
-
+      <p>{name}</p>
     </div>
   )
 }

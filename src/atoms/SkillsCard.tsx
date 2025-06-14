@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react'
-import { categories } from 'src/datas/categories'
+import { categories } from 'src/datas/Categories'
 import CategoryTag from './CategoryTag'
 
 type SkillCardProps = {

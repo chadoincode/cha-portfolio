@@ -1,4 +1,4 @@
-export const interest = [
+export const interests = [
   {
     name: "Front-End Development",
     desc: "I love building clean, responsive, and user-friendly interfaces."
