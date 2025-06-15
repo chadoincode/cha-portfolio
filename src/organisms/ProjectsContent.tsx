@@ -39,7 +39,7 @@ const ProjectsContent = () => {
           <ProjectsTitle category="Video Editing" />
         </div>
       </ScrollAnimation>
-      <div>
+      <div className="flex flex-col md:flex-row gap-2 sm:gap-3">
         {
           editing.map((edit, index) => (
             <ScrollAnimation>
