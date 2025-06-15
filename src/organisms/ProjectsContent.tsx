@@ -3,7 +3,8 @@ import ProjectsCard from "src/atoms/ProjectsCard.tsx"
 import FadeIn from "src/animations/FadeIn"
 import ScrollAnimation from "src/animations/ScrollAnimation"
 import { WebProjects } from "src/datas/WebProjects"
-import { Editing } from "src/datas/Editing"
+import { editing } from "src/datas/Editing"
+import EditingCard from "src/atoms/EditingCard"
 
 const ProjectsContent = () => {
   return(
@@ -39,7 +40,18 @@ const ProjectsContent = () => {
         </div>
       </ScrollAnimation>
       <div>
-        {}
+        {
+          editing.map((edit, index) => (
+            <ScrollAnimation>
+              <EditingCard 
+                key={index}
+                title={edit.title}
+                link={edit.link}
+                thumbnail={typeof edit.thumbnail === "string" ? edit.thumbnail : edit.thumbnail.src}
+              />
+            </ScrollAnimation>
+          ))
+        }
       </div>
     </div>
   )

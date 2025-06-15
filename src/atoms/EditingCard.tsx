@@ -6,11 +6,13 @@ type EditingCardProps = {
 
 const EditingCard = ({ title, link, thumbnail }: EditingCardProps) => {
   return(
-    <div>
-      <img src={thumbnail} alt="" />
+    <div className="cursor-pointer">
+      <div>
+        <img src={thumbnail} alt="" />
+      </div>
+      <a href={link}></a>
       <div>
         <p>{title}</p>
-
       </div>
     </div>
   )
