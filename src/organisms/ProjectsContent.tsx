@@ -23,6 +23,7 @@ const ProjectsContent = () => {
           WebProjects.map((project, index) => (
             <ScrollAnimation>
               <ProjectsCard
+                key={index}
                 title={project.name}
                 description={project.description}
                 link={project.link}
@@ -32,7 +33,7 @@ const ProjectsContent = () => {
         }
       </div>
       <ScrollAnimation>
-        <div>
+        <div className="py-5 text-light">
           <ProjectsTitle category="Video Editing" />
         </div>
       </ScrollAnimation>
