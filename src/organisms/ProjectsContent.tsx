@@ -13,21 +13,21 @@ const ProjectsContent = () => {
           <p>Contains all of my works!</p>
         </div>
       </ScrollAnimation>
-      <FadeIn delay={0.3}>
+      <ScrollAnimation>
         <div className="py-5 text-light">
           <ProjectsTitle category="Simple Websites" />
         </div>
-      </FadeIn>
+      </ScrollAnimation>
       <div className="flex flex-col md:flex-row gap-2 sm:gap-3">
         {
           WebProjects.map((project, index) => (
-            <FadeIn delay={index * 0.1 + 0.3}>
+            <ScrollAnimation>
               <ProjectsCard
                 title={project.name}
                 description={project.description}
                 link={project.link}
               />
-            </FadeIn>
+            </ScrollAnimation>
           ))
         }
       </div>
