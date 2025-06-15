@@ -20,7 +20,7 @@ const ProjectsContent = () => {
           <ProjectsTitle category="Simple Websites" />
         </div>
       </ScrollAnimation>
-      <div className="flex flex-col md:flex-row gap-2 sm:gap-3">
+      <div className="flex flex-col md:flex-row gap-2 sm:gap-3 px-5">
         {
           WebProjects.map((project, index) => (
             <ScrollAnimation>
@@ -39,7 +39,7 @@ const ProjectsContent = () => {
           <ProjectsTitle category="Video Editing" />
         </div>
       </ScrollAnimation>
-      <div className="flex flex-col md:flex-row gap-2 sm:gap-3">
+      <div className="flex flex-col md:flex-row gap-2 sm:gap-3 px-5">
         {
           editing.map((edit, index) => (
             <ScrollAnimation>
