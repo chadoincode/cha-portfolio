@@ -1,3 +1,8 @@
 ---
-import 
+import GalleryPage from "@components/GalleryPage.astro"
+import "../styles/index.css"
+import Layout from "@layouts/Layout.astro"
 ---
+<Layout>
+  <GalleryPage client:load />
+</Layout>
