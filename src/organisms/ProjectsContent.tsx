@@ -3,6 +3,7 @@ import ProjectsCard from "src/atoms/ProjectsCard.tsx"
 import FadeIn from "src/animations/FadeIn"
 import ScrollAnimation from "src/animations/ScrollAnimation"
 import { WebProjects } from "src/datas/WebProjects"
+import { Editing } from "src/datas/Editing"
 
 const ProjectsContent = () => {
   return(
