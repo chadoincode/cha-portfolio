@@ -4,12 +4,15 @@ import Flexy from "../assets/designs/flexy-poster.jpg"
 
 export const designs = [
   {
+    title: "Flexy App Poster",
     image: Flexy,
   },
   {
+    title: "Matcha Latte",
     image: MatchaLatte
   },
   {
+    title: "Soft Serve",
     image: SoftServe
   }
 ]
