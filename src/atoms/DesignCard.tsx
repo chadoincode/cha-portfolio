@@ -15,3 +15,5 @@ const DesignCard = ({ title, image}: DesignCardProps) => {
     </div>
   )
 }
+
+export default DesignCard

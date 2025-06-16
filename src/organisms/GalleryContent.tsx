@@ -1,5 +1,7 @@
 import ScrollAnimation from "src/animations/ScrollAnimation"
 import ProjectsTitle from "src/atoms/ProjectsTitle"
+import DesignCard from "src/atoms/DesignCard"
+import { designs } from "src/datas/Designs"
 
 const GalleryContent = () => {
   return(
@@ -15,6 +17,19 @@ const GalleryContent = () => {
           <ProjectsTitle category="Graphic Design" />
         </div>
       </ScrollAnimation>
+      <div className="flex flex-col md:flex-row gap-2 px-5">
+        {
+          designs.map((design, index) => (
+            <ScrollAnimation>
+              <DesignCard 
+                key={index}
+                title={design.title}
+                image={typeof design.image === "string" ? design.image : design.image.src}
+              />
+            </ScrollAnimation>
+          ))
+        }
+      </div>
     </div>
   )
 }
