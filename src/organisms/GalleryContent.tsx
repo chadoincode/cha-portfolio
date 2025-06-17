@@ -17,7 +17,7 @@ const GalleryContent = () => {
           <ProjectsTitle category="Graphic Design" />
         </div>
       </ScrollAnimation>
-      <div className="flex flex-col md:flex-row gap-2 px-5">
+      <div className="flex flex-col md:flex-row gap-2 p-5">
         {
           designs.map((design, index) => (
             <ScrollAnimation>
