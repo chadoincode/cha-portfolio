@@ -6,7 +6,7 @@ type InterestCardProps = {
   desc: string
 }
 
-const InterestCard = ({ name, desc }) => {
+const InterestCard = ({ name, desc }: InterestCardProps) => {
   return(
     <div className="group relative overflow-hidden border-2 sm:h-20 h-fit rounded-2xl cursor-pointer transition-all duration-300 hover:bg-hover-card">
       <div className="duration-300 inset-0 items-center justify-center transition-opacity group-hover:opacity-0">
