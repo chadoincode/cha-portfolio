@@ -1,4 +1,4 @@
-import ButtonText from "@/atoms/ButtonText";
+import ButtonText from "../atoms/ButtonText";
 import { Github } from "lucide-react";
 import { Instagram } from "lucide-react";
 import { Linkedin } from "lucide-react";

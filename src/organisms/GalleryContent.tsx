@@ -1,7 +1,7 @@
-import ScrollAnimation from "@/animations/ScrollAnimation"
-import ProjectsTitle from "@/atoms/ProjectsTitle"
-import DesignCard from "@/atoms/DesignCard"
-import { designs } from "@/datas/Designs"
+import ScrollAnimation from "../animations/ScrollAnimation"
+import ProjectsTitle from "../atoms/ProjectsTitle"
+import DesignCard from "../atoms/DesignCard"
+import { designs } from "../datas/Designs"
 
 const GalleryContent = () => {
   return(

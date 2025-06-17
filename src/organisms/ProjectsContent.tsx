@@ -1,10 +1,10 @@
-import ProjectsTitle from "@/atoms/ProjectsTitle.tsx"
-import ProjectsCard from "@/atoms/ProjectsCard.tsx"
-import FadeIn from "@/animations/FadeIn"
-import ScrollAnimation from "@/animations/ScrollAnimation"
-import { WebProjects } from "@/datas/WebProjects"
-import { editing } from "@/datas/Editing"
-import EditingCard from "@/atoms/EditingCard"
+import ProjectsTitle from "../atoms/ProjectsTitle.tsx"
+import ProjectsCard from "../atoms/ProjectsCard.tsx"
+import FadeIn from "../animations/FadeIn"
+import ScrollAnimation from "../animations/ScrollAnimation"
+import { WebProjects } from "../datas/WebProjects"
+import { editing } from "../datas/Editing"
+import EditingCard from "../atoms/EditingCard"
 
 const ProjectsContent = () => {
   return(
