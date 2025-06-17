@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm install --omit=optional && npm run build"
   publish = "dist"
 
 [dev]
@@ -8,3 +8,5 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+
