@@ -1,23 +1,18 @@
-import MatchaLatte from "../assets/designs/matcha-latte.png"
-import SoftServe from "../assets/designs/soft-serve.png"
-import Flexy from "../assets/designs/flexy-poster.jpg"
-import Feeds from "../assets/designs/feeds.jpg"
-
 export const designs = [
   {
     title: "Flexy App Poster",
-    image: Flexy,
+    image: "/designs/flexy-poster.jpg"
   },
   {
     title: "Matcha Latte",
-    image: MatchaLatte
+    image: "/designs/matcha-latte.png"
   },
   {
     title: "Soft Serve",
-    image: SoftServe
+    image: "/designs/soft-serve.png"
   },
   {
     title: "The Chrome Diner",
-    image: Feeds
+    image: "/designs/feeds.jpg"
   }
 ]

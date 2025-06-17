@@ -19,15 +19,26 @@ const GalleryContent = () => {
       </ScrollAnimation>
       <div className="flex flex-col sm:flex-row gap-2 p-5">
         {
-          designs.map((design, index) => (
-            <ScrollAnimation>
-              <DesignCard 
-                key={index}
-                title={design.title}
-                image={typeof design.image === "string" ? design.image : design.image.src}
-              />
-            </ScrollAnimation>
-          ))
+          designs.map((design, index) => {
+            // const imageUrl =
+            //   typeof design.image === "string"
+            //     ? design.image
+            //     : (design.image && "src" in design.image ? design.image?.src : "");
+
+            // if (!imageUrl) {
+            //   console.warn(`Image not found for design: ${design.title}`);
+            //   return null;
+            // }
+
+            return (
+              <ScrollAnimation key={index}>
+                <DesignCard 
+                  title={design.title}
+                  image={design.image}
+                />
+              </ScrollAnimation>
+            );
+          })
         }
       </div>
     </div>
