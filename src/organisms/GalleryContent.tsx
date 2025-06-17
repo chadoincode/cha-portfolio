@@ -7,9 +7,9 @@ const GalleryContent = () => {
   return(
     <div className="flex-min-h-screen px-15 sm:px-25 py-10">
       <ScrollAnimation>
-        <div className="flex-col place-items-center text-light">
+        <div className="flex-col place-items-center text-light pb-3">
           <h1 className="text-2xl font-bold">Gallery</h1>
-          <p>Contains all of my design projects!</p>
+          <p className="text-sm text-center md:text-md">Contains all of my design projects!</p>
         </div>
       </ScrollAnimation>
       <ScrollAnimation>
@@ -17,7 +17,7 @@ const GalleryContent = () => {
           <ProjectsTitle category="Graphic Design" />
         </div>
       </ScrollAnimation>
-      <div className="flex flex-col md:flex-row gap-2 p-5">
+      <div className="flex flex-col sm:flex-row gap-2 p-5">
         {
           designs.map((design, index) => (
             <ScrollAnimation>
