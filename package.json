@@ -24,5 +24,8 @@
   },
   "devDependencies": {
     "@iconify/react": "^6.0.0"
+  },
+  "engines": {
+    "node": "22.14.0"
   }
 }
