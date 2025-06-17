@@ -1,6 +1,7 @@
 import MatchaLatte from "../assets/designs/matcha-latte.png"
 import SoftServe from "../assets/designs/soft-serve.png"
 import Flexy from "../assets/designs/flexy-poster.jpg"
+import Feeds from "../assets/designs/feeds.jpg"
 
 export const designs = [
   {
@@ -14,5 +15,9 @@ export const designs = [
   {
     title: "Soft Serve",
     image: SoftServe
+  },
+  {
+    title: "The Chrome Diner",
+    image: Feeds
   }
 ]
