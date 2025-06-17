@@ -9,6 +9,7 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@src/*": ["src/*"],
+      "src/*": ["src/*"],
       "@sections/*": ["src/sections/*"],
       "@organisms/*": ["src/organisms/*"],
       "@atoms/*": ["src/atoms/*"]
