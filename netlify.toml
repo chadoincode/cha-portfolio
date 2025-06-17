@@ -7,6 +7,6 @@
   port = 4321
 
 [build.environment]
-  NODE_VERSION = "22"
+  NODE_VERSION = "22.14.0"
 
 
