@@ -30,8 +30,8 @@
     "@types/babel__traverse": "^7.20.7",
     "@types/estree": "^1.0.8",
     "@types/fontkit": "^2.0.8",
-    "tailwindcss": "^4.1.10",
-    "autoprefixer": "^10.4.21"
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.10"
   },
   "engines": {
     "node": "22.14.0"
