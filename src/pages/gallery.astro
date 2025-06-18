@@ -1,5 +1,5 @@
 ---
-// import GalleryPage from "../comps/GalleryPage.astro"
+import GalleryContent from "@/organisms/GalleryContent"
 import "../styles/index.css"
 import Layout from "../layouts/Layout.astro"
 import Header from "../sections/Header"
@@ -10,20 +10,9 @@ import Footer from "../sections/Footer"
     <Header />
   </head>
   <body>
-    <h1>This Page is Still Under Maintenance☹️</h1>
+    <GalleryContent client:load />
   </body>
-  <!-- <GalleryPage client:load /> -->
    <footer>
     <Footer />
    </footer>
 </Layout>
-<style>
-  h1{
-    text-align: center;
-    color: aliceblue;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
