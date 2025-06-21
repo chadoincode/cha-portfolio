@@ -29,11 +29,11 @@ const GalleryContent = () => {
           ))
         }
       </div>
-      <ScrollAnimation>
+      {/* <ScrollAnimation>
         <div>
           <ProjectsTitle category="Arts(?)" />
         </div>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
     </div>
   )
 }
