@@ -14,7 +14,7 @@ const GalleryContent = () => {
       </ScrollAnimation>
       <ScrollAnimation>
         <div>
-          <ProjectsTitle category="Graphic Design" />
+          <ProjectsTitle category="Graphic Designs" />
         </div>
       </ScrollAnimation>
       <div className="flex flex-col sm:flex-row gap-2 p-5">
@@ -24,11 +24,16 @@ const GalleryContent = () => {
               <DesignCard 
                 title={design.title}
                 image={design.image}
-              />
+                />
             </ScrollAnimation>
           ))
         }
       </div>
+      <ScrollAnimation>
+        <div>
+          <ProjectsTitle category="Arts(?)" />
+        </div>
+      </ScrollAnimation>
     </div>
   )
 }
