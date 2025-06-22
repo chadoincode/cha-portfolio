@@ -11,7 +11,7 @@ const DesignCard = ({ title, image}: DesignCardProps) => {
   return(
     <>
     {/* card */}
-      <div className="group relative group cursor-pointer overflow-hidden duration-300 transition-all">
+      <div className="group relative group cursor-pointer overflow-hidden duration-300 transition-all hover:scale-105 ease-in-out">
         <div className="duration-300 inset-0 transition">
           <img src={image} alt={title} className="sm:h-60 md:h-50 lg:h-70 rounded-lg " loading="lazy" />
         </div>
@@ -31,7 +31,7 @@ const DesignCard = ({ title, image}: DesignCardProps) => {
           <X size={40} color="#FDFDF5" className="absolute top-3 right-3 cursor-pointer" onClick={(()=> setIsClicked(false))}  />
             <div onClick={(e) => e.stopPropagation()} className="">
               {/* <p className="text-light font-bold text-center text-2xl ">Preview</p> */}
-              <img src={image} alt={title} className="md:h-110 h-80 rounded-2xl" loading="lazy" />
+              <img src={image} alt={title} className="md:h-110 h-80 rounded-2xl animate-popup" loading="lazy" />
             </div>
           </div>
         )
