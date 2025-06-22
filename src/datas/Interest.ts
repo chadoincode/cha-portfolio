@@ -19,10 +19,10 @@ export const interests = [
     name: "SEO",
     desc: "I'm interested in optimizing content and structure to help websites perform better in search engines."
   }, 
-  {
-    name: "Gaming",
-    desc: "I love exploring immersive worlds and challenging gameplay in my spare time."
-  },
+  // {
+  //   name: "Gaming",
+  //   desc: "I love exploring immersive worlds and challenging gameplay in my spare time."
+  // },
   {
     name: "Reading",
     desc: "Reading helps me slow down, learn new things, and spark new ideas."
